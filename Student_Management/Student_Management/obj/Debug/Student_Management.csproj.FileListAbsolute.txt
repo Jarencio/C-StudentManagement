@@ -1,0 +1,10 @@
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\bin\Debug\Student_Management.exe.config
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\bin\Debug\Student_Management.exe
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\bin\Debug\Student_Management.pdb
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.csproj.AssemblyReference.cache
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.Form1.resources
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.Properties.Resources.resources
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.csproj.GenerateResource.cache
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.exe
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.pdb
