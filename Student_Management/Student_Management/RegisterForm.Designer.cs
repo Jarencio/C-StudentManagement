@@ -33,6 +33,7 @@ namespace Student_Management
             this.txt_FN = new System.Windows.Forms.TextBox();
             this.Registration_GridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_LN = new System.Windows.Forms.TextBox();
             this.txt_MI = new System.Windows.Forms.TextBox();
@@ -46,14 +47,13 @@ namespace Student_Management
             this.txt_Address = new System.Windows.Forms.TextBox();
             this.txt_PhoneNumber = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PB_Student = new System.Windows.Forms.PictureBox();
             this.btn_Upload = new System.Windows.Forms.Button();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Registration_GridView)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Student)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,6 +94,16 @@ namespace Student_Management
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(867, 62);
             this.panel1.TabIndex = 4;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(265, 7);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(347, 46);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "REGISTRATON";
             // 
             // label2
             // 
@@ -166,6 +176,8 @@ namespace Student_Management
             // CB_M
             // 
             this.CB_M.AutoSize = true;
+            this.CB_M.Checked = true;
+            this.CB_M.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CB_M.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_M.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CB_M.Location = new System.Drawing.Point(540, 401);
@@ -174,6 +186,7 @@ namespace Student_Management
             this.CB_M.TabIndex = 12;
             this.CB_M.Text = "Male";
             this.CB_M.UseVisualStyleBackColor = true;
+            this.CB_M.CheckedChanged += new System.EventHandler(this.CB_M_CheckedChanged);
             // 
             // CB_F
             // 
@@ -186,6 +199,7 @@ namespace Student_Management
             this.CB_F.TabIndex = 13;
             this.CB_F.Text = "Female";
             this.CB_F.UseVisualStyleBackColor = true;
+            this.CB_F.CheckedChanged += new System.EventHandler(this.CB_F_CheckedChanged);
             // 
             // label6
             // 
@@ -226,14 +240,14 @@ namespace Student_Management
             this.label7.TabIndex = 16;
             this.label7.Text = "Phone Number:";
             // 
-            // pictureBox1
+            // PB_Student
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(717, 334);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 138);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.PB_Student.Location = new System.Drawing.Point(717, 334);
+            this.PB_Student.Name = "PB_Student";
+            this.PB_Student.Size = new System.Drawing.Size(138, 138);
+            this.PB_Student.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PB_Student.TabIndex = 18;
+            this.PB_Student.TabStop = false;
             // 
             // btn_Upload
             // 
@@ -247,6 +261,7 @@ namespace Student_Management
             this.btn_Upload.TabIndex = 19;
             this.btn_Upload.Text = "Upload";
             this.btn_Upload.UseVisualStyleBackColor = false;
+            this.btn_Upload.Click += new System.EventHandler(this.btn_Upload_Click);
             // 
             // btn_Clear
             // 
@@ -260,6 +275,7 @@ namespace Student_Management
             this.btn_Clear.TabIndex = 20;
             this.btn_Clear.Text = "Clear";
             this.btn_Clear.UseVisualStyleBackColor = false;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // btn_Add
             // 
@@ -273,16 +289,7 @@ namespace Student_Management
             this.btn_Add.TabIndex = 21;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(265, 7);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(347, 46);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "REGISTRATON";
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // RegisterForm
             // 
@@ -293,7 +300,7 @@ namespace Student_Management
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.btn_Upload);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PB_Student);
             this.Controls.Add(this.txt_PhoneNumber);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_Address);
@@ -318,7 +325,7 @@ namespace Student_Management
             ((System.ComponentModel.ISupportInitialize)(this.Registration_GridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PB_Student)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,7 +341,6 @@ namespace Student_Management
         private System.Windows.Forms.TextBox txt_MI;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker DT_Birth;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox CB_M;
         private System.Windows.Forms.CheckBox CB_F;
@@ -342,10 +348,11 @@ namespace Student_Management
         private System.Windows.Forms.TextBox txt_Address;
         private System.Windows.Forms.TextBox txt_PhoneNumber;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PB_Student;
         private System.Windows.Forms.Button btn_Upload;
         private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker DT_Birth;
     }
 }
