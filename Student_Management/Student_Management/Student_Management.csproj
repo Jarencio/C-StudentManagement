@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\303173562_448810843934999_516028877264782551_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snapinsta.app_277691847_676859390229923_4957537845703695624_n_1080_upscayl_4x_realesrgan-x4fast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe_Express_20240227_1101200.829388321180157.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\800px-Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
