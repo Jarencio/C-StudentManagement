@@ -18,11 +18,18 @@ namespace Student_Management
             CusDes();
         }
 
-
+        StudentClass cl = new StudentClass();
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            StdCount();
+        }
 
+        private void StdCount()
+        {
+            lbl_TS.Text = "Total Students: " + cl.TotalStudent();
+            lbl_TSM.Text = "Male: " + cl.MaleStd();
+            lbl_TSF.Text = "Female: " + cl.FemaleStd();
         }
 
         private void CusDes()
@@ -70,7 +77,7 @@ namespace Student_Management
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            //...
+            OpenChildForm(new MSForm());
             Hidesubmenu();
         }
         private void button3_Click(object sender, EventArgs e)
@@ -179,6 +186,7 @@ namespace Student_Management
             if (activeform != null)
             {
                 activeform.Close();
+                StdCount();
             }
 
             // Show the cover panel

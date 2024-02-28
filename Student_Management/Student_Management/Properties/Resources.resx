@@ -124,10 +124,13 @@
   <data name="Snapinsta.app_277691847_676859390229923_4957537845703695624_n_1080_upscayl_4x_realesrgan-x4fast" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snapinsta.app_277691847_676859390229923_4957537845703695624_n_1080_upscayl_4x_realesrgan-x4fast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="800px-Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\800px-Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Adobe_Express_20240227_1101200.829388321180157" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adobe_Express_20240227_1101200.829388321180157.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="800px-Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\800px-Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="861627" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\861627.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -41,4 +41,4 @@ C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.csproj.CopyComplete
-C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.Form1.resources
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.MSForm.resources

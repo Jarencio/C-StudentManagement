@@ -83,6 +83,16 @@ namespace Student_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _861627 {
+            get {
+                object obj = ResourceManager.GetObject("861627", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Adobe_Express_20240227_1101200_829388321180157 {
             get {
                 object obj = ResourceManager.GetObject("Adobe_Express_20240227_1101200.829388321180157", resourceCulture);

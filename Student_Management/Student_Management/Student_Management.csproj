@@ -101,17 +101,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConnect.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSForm.Designer.cs">
+      <DependentUpon>MSForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -122,11 +122,11 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentClass.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSForm.resx">
+      <DependentUpon>MSForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\800px-Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\861627.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

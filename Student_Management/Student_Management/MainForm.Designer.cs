@@ -459,7 +459,7 @@ namespace Student_Management
             this.Pnl_Main.Location = new System.Drawing.Point(215, 0);
             this.Pnl_Main.Margin = new System.Windows.Forms.Padding(4);
             this.Pnl_Main.Name = "Pnl_Main";
-            this.Pnl_Main.Size = new System.Drawing.Size(880, 757);
+            this.Pnl_Main.Size = new System.Drawing.Size(911, 757);
             this.Pnl_Main.TabIndex = 1;
             // 
             // pictureBox3
@@ -467,7 +467,7 @@ namespace Student_Management
             this.pictureBox3.Image = global::Student_Management.Properties.Resources._800px_Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24;
             this.pictureBox3.Location = new System.Drawing.Point(0, 149);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(880, 489);
+            this.pictureBox3.Size = new System.Drawing.Size(911, 489);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
@@ -482,13 +482,13 @@ namespace Student_Management
             this.panel1.Controls.Add(this.lbl_Welcome);
             this.panel1.Location = new System.Drawing.Point(0, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(950, 78);
+            this.panel1.Size = new System.Drawing.Size(911, 78);
             this.panel1.TabIndex = 8;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(743, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(783, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(125, 67);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -551,7 +551,7 @@ namespace Student_Management
             this.panel2.Controls.Add(this.lbl_TS);
             this.panel2.Location = new System.Drawing.Point(0, 634);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(880, 123);
+            this.panel2.Size = new System.Drawing.Size(911, 123);
             this.panel2.TabIndex = 9;
             // 
             // lbl_SCF
@@ -634,7 +634,7 @@ namespace Student_Management
             this.pnl_cover.Controls.Add(this.label1);
             this.pnl_cover.Location = new System.Drawing.Point(0, 0);
             this.pnl_cover.Name = "pnl_cover";
-            this.pnl_cover.Size = new System.Drawing.Size(880, 757);
+            this.pnl_cover.Size = new System.Drawing.Size(911, 757);
             this.pnl_cover.TabIndex = 0;
             // 
             // label1
@@ -652,12 +652,14 @@ namespace Student_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 757);
+            this.ClientSize = new System.Drawing.Size(1126, 757);
             this.Controls.Add(this.Pnl_Main);
             this.Controls.Add(Pnl_Slide);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Main";
             this.Load += new System.EventHandler(this.Form1_Load);
             Pnl_Slide.ResumeLayout(false);
             this.pnl_GradesSubmenu.ResumeLayout(false);

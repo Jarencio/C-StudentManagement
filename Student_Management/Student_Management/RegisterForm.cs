@@ -146,6 +146,9 @@ namespace Student_Management
             txt_MI.Clear();
             txt_PhoneNumber.Clear();
             PB_Student.Image = null;
+            DT_Birth.Value = DateTime.Now;
+            CB_M.Checked = true;
+            CB_F.Checked = false;
         }
     }
 }
