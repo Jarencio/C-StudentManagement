@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Web.UI.MobileControls;
 
 namespace Student_Management
 {
@@ -112,6 +113,15 @@ namespace Student_Management
             }
         }
 
+        public DataTable Getlist(MySqlCommand com)
+        {
+            com.Connection = connect.getconnection;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+            return table;
+        }
     
     }
 }

@@ -87,7 +87,7 @@ namespace Student_Management
         }
         private void Btn_StdPrint_Click(object sender, EventArgs e)
         {
-            //...
+            OpenChildForm(new PrintStdForm());
             Hidesubmenu();
         }
 

@@ -45,7 +45,6 @@ namespace Student_Management
             this.Btn_Course = new System.Windows.Forms.Button();
             this.pnl_StudentSubmenu = new System.Windows.Forms.Panel();
             this.Btn_StdPrint = new System.Windows.Forms.Button();
-            this.Btn_Status = new System.Windows.Forms.Button();
             this.Btn_MngStud = new System.Windows.Forms.Button();
             this.Btn_Reg = new System.Windows.Forms.Button();
             this.Btn_Student = new System.Windows.Forms.Button();
@@ -111,7 +110,7 @@ namespace Student_Management
             this.Btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Exit.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Exit.Location = new System.Drawing.Point(0, 954);
+            this.Btn_Exit.Location = new System.Drawing.Point(0, 918);
             this.Btn_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Exit.Name = "Btn_Exit";
             this.Btn_Exit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -129,7 +128,7 @@ namespace Student_Management
             this.Btn_Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Dashboard.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Dashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Dashboard.Location = new System.Drawing.Point(0, 884);
+            this.Btn_Dashboard.Location = new System.Drawing.Point(0, 848);
             this.Btn_Dashboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Dashboard.Name = "Btn_Dashboard";
             this.Btn_Dashboard.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -147,7 +146,7 @@ namespace Student_Management
             this.pnl_GradesSubmenu.Controls.Add(this.Btn_MngGrades);
             this.pnl_GradesSubmenu.Controls.Add(this.Btn_NewGrades);
             this.pnl_GradesSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_GradesSubmenu.Location = new System.Drawing.Point(0, 744);
+            this.pnl_GradesSubmenu.Location = new System.Drawing.Point(0, 708);
             this.pnl_GradesSubmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_GradesSubmenu.Name = "pnl_GradesSubmenu";
             this.pnl_GradesSubmenu.Size = new System.Drawing.Size(215, 140);
@@ -214,7 +213,7 @@ namespace Student_Management
             this.Btn_Grades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Grades.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Grades.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Grades.Location = new System.Drawing.Point(0, 674);
+            this.Btn_Grades.Location = new System.Drawing.Point(0, 638);
             this.Btn_Grades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Grades.Name = "Btn_Grades";
             this.Btn_Grades.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -232,7 +231,7 @@ namespace Student_Management
             this.pnl_CourseSubmenu.Controls.Add(this.Btn_MngCourse);
             this.pnl_CourseSubmenu.Controls.Add(this.Btn_NewCourse);
             this.pnl_CourseSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_CourseSubmenu.Location = new System.Drawing.Point(0, 535);
+            this.pnl_CourseSubmenu.Location = new System.Drawing.Point(0, 499);
             this.pnl_CourseSubmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_CourseSubmenu.Name = "pnl_CourseSubmenu";
             this.pnl_CourseSubmenu.Size = new System.Drawing.Size(215, 139);
@@ -299,7 +298,7 @@ namespace Student_Management
             this.Btn_Course.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Course.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Course.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Course.Location = new System.Drawing.Point(0, 465);
+            this.Btn_Course.Location = new System.Drawing.Point(0, 429);
             this.Btn_Course.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Course.Name = "Btn_Course";
             this.Btn_Course.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -314,14 +313,13 @@ namespace Student_Management
             // 
             this.pnl_StudentSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(110)))), ((int)(((byte)(225)))));
             this.pnl_StudentSubmenu.Controls.Add(this.Btn_StdPrint);
-            this.pnl_StudentSubmenu.Controls.Add(this.Btn_Status);
             this.pnl_StudentSubmenu.Controls.Add(this.Btn_MngStud);
             this.pnl_StudentSubmenu.Controls.Add(this.Btn_Reg);
             this.pnl_StudentSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_StudentSubmenu.Location = new System.Drawing.Point(0, 280);
             this.pnl_StudentSubmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_StudentSubmenu.Name = "pnl_StudentSubmenu";
-            this.pnl_StudentSubmenu.Size = new System.Drawing.Size(215, 185);
+            this.pnl_StudentSubmenu.Size = new System.Drawing.Size(215, 149);
             this.pnl_StudentSubmenu.TabIndex = 1;
             // 
             // Btn_StdPrint
@@ -331,34 +329,16 @@ namespace Student_Management
             this.Btn_StdPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_StdPrint.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_StdPrint.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_StdPrint.Location = new System.Drawing.Point(0, 138);
+            this.Btn_StdPrint.Location = new System.Drawing.Point(0, 98);
             this.Btn_StdPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_StdPrint.Name = "Btn_StdPrint";
             this.Btn_StdPrint.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.Btn_StdPrint.Size = new System.Drawing.Size(215, 46);
+            this.Btn_StdPrint.Size = new System.Drawing.Size(215, 49);
             this.Btn_StdPrint.TabIndex = 6;
             this.Btn_StdPrint.Text = "Print";
             this.Btn_StdPrint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Btn_StdPrint.UseVisualStyleBackColor = true;
             this.Btn_StdPrint.Click += new System.EventHandler(this.Btn_StdPrint_Click);
-            // 
-            // Btn_Status
-            // 
-            this.Btn_Status.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Btn_Status.FlatAppearance.BorderSize = 0;
-            this.Btn_Status.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Status.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Status.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Status.Location = new System.Drawing.Point(0, 92);
-            this.Btn_Status.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Btn_Status.Name = "Btn_Status";
-            this.Btn_Status.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.Btn_Status.Size = new System.Drawing.Size(215, 46);
-            this.Btn_Status.TabIndex = 5;
-            this.Btn_Status.Text = "Status";
-            this.Btn_Status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Status.UseVisualStyleBackColor = true;
-            this.Btn_Status.Click += new System.EventHandler(this.button3_Click);
             // 
             // Btn_MngStud
             // 
@@ -367,11 +347,11 @@ namespace Student_Management
             this.Btn_MngStud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_MngStud.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_MngStud.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_MngStud.Location = new System.Drawing.Point(0, 46);
+            this.Btn_MngStud.Location = new System.Drawing.Point(0, 49);
             this.Btn_MngStud.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_MngStud.Name = "Btn_MngStud";
             this.Btn_MngStud.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.Btn_MngStud.Size = new System.Drawing.Size(215, 46);
+            this.Btn_MngStud.Size = new System.Drawing.Size(215, 49);
             this.Btn_MngStud.TabIndex = 4;
             this.Btn_MngStud.Text = "Manage Student";
             this.Btn_MngStud.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,7 +369,7 @@ namespace Student_Management
             this.Btn_Reg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Reg.Name = "Btn_Reg";
             this.Btn_Reg.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.Btn_Reg.Size = new System.Drawing.Size(215, 46);
+            this.Btn_Reg.Size = new System.Drawing.Size(215, 49);
             this.Btn_Reg.TabIndex = 3;
             this.Btn_Reg.Text = "Registration";
             this.Btn_Reg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -684,7 +664,6 @@ namespace Student_Management
         #endregion
         private System.Windows.Forms.Panel pnl_StudentSubmenu;
         private System.Windows.Forms.Button Btn_StdPrint;
-        private System.Windows.Forms.Button Btn_Status;
         private System.Windows.Forms.Button Btn_MngStud;
         private System.Windows.Forms.Button Btn_Reg;
         private System.Windows.Forms.Button Btn_Student;
