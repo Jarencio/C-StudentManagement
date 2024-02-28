@@ -139,7 +139,7 @@ namespace Student_Management
 
         private void Btn_Exit_Click(object sender, EventArgs e)
         {
-
+ 
         }
 
         private void lbl_Short_Click(object sender, EventArgs e)
@@ -166,6 +166,24 @@ namespace Student_Management
             Pnl_Main.Tag = ChildForm;
             ChildForm.BringToFront();
             ChildForm.Show();
+        }
+
+        private void Btn_Exit_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Dashboard_Click(object sender, EventArgs e)
+        {
+            // Close the active form if there is one
+            if (activeform != null)
+            {
+                activeform.Close();
+            }
+
+            // Show the cover panel
+            Pnl_Main.Controls.Add(pnl_cover);
+
         }
     }
 }

@@ -58,6 +58,8 @@ namespace Student_Management
                     {
                         showTable();
                         MessageBox.Show("New Student is added to the record!", "Registraion Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Clear_All();
+                    
                     }
                 }
 
@@ -68,7 +70,7 @@ namespace Student_Management
             }
             else
             {
-                MessageBox.Show( "Fill Up all the Important Informations", "Registraion Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Fill Up all the Important Informations", "Registraion Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -76,7 +78,7 @@ namespace Student_Management
         bool verify()
         {
             if ((txt_FN.Text == "") || (txt_LN.Text == "") ||
-                (txt_MI.Text == "") || (txt_Address.Text == "") || (txt_PhoneNumber.Text == "") ||
+                (txt_Address.Text == "") || (txt_PhoneNumber.Text == "") ||
                 PB_Student.Image == null)
             {
                 return false;
@@ -89,12 +91,7 @@ namespace Student_Management
         }
         private void btn_Clear_Click(object sender, EventArgs e)
         {
-            txt_Address.Clear();
-            txt_FN.Clear();
-            txt_LN.Clear();
-            txt_MI.Clear();
-            txt_PhoneNumber.Clear();
-            PB_Student.Image = null;
+            Clear_All();
         }
 
         private void CB_M_CheckedChanged(object sender, EventArgs e)
@@ -125,7 +122,7 @@ namespace Student_Management
 
         private void Registration_GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         public void showTable()
@@ -139,6 +136,16 @@ namespace Student_Management
         private void RegisterForm_Load(object sender, EventArgs e)
         {
             showTable();
+        }
+
+        private void Clear_All()
+        {
+            txt_Address.Clear();
+            txt_FN.Clear();
+            txt_LN.Clear();
+            txt_MI.Clear();
+            txt_PhoneNumber.Clear();
+            PB_Student.Image = null;
         }
     }
 }

@@ -14,15 +14,15 @@ namespace Student_Management
 
         public bool insertSTD(string Fname, String Lname, String MI, DateTime Bday, string sex, string phone, string address, byte[] img)
         {
-            MySqlCommand command = new MySqlCommand("INSERT INTO `student`(`FirstName`, `LastName`, `MiddleInitial`, `DOB`, `Sex`, `Address`, `PhoneNumber`, `Photo`) VALUES (@fn,@ln,@MIn,@BD,@S,@ADD,@PH,@img)", connect.getconnection);
+            MySqlCommand command = new MySqlCommand("INSERT INTO `student`(`FirstName`, `LastName`, `MI`, `DOB`, `Sex`, `Address`, `Phone`, `Photo`) VALUES (@fn,@ln,@MIn,@BD,@S,@ADD,@PH,@img)", connect.getconnection);
             //@fn,@ln,@MIn,@BD,@S,@ADD,@PH,@img
             command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = Fname;
             command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = Lname;
             command.Parameters.Add("@MIn", MySqlDbType.VarChar).Value = MI;
             command.Parameters.Add("@BD", MySqlDbType.Date).Value = Bday;
             command.Parameters.Add("@S", MySqlDbType.VarChar).Value = sex;
-            command.Parameters.Add("ADD", MySqlDbType.VarChar).Value = phone;
-            command.Parameters.Add("@PH", MySqlDbType.VarChar).Value = address;
+            command.Parameters.Add("ADD", MySqlDbType.VarChar).Value = address;
+            command.Parameters.Add("@PH", MySqlDbType.VarChar).Value = phone;
             command.Parameters.Add("@img", MySqlDbType.Blob).Value = img;
 
             connect.openconnect();

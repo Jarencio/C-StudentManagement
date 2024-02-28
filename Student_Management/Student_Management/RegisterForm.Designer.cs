@@ -29,9 +29,9 @@ namespace Student_Management
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_FN = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,11 +52,11 @@ namespace Student_Management
             this.btn_Upload = new System.Windows.Forms.Button();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
-            this.Registration_GridView = new System.Windows.Forms.DataGridView();
             this.PB_Student = new System.Windows.Forms.PictureBox();
+            this.Registration_GridView = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Registration_GridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Student)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Registration_GridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +64,7 @@ namespace Student_Management
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(13, 526);
+            this.label1.Location = new System.Drawing.Point(13, 519);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 23);
             this.label1.TabIndex = 1;
@@ -73,7 +73,7 @@ namespace Student_Management
             // txt_FN
             // 
             this.txt_FN.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_FN.Location = new System.Drawing.Point(145, 520);
+            this.txt_FN.Location = new System.Drawing.Point(145, 513);
             this.txt_FN.Name = "txt_FN";
             this.txt_FN.Size = new System.Drawing.Size(151, 32);
             this.txt_FN.TabIndex = 2;
@@ -85,7 +85,7 @@ namespace Student_Management
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(867, 62);
+            this.panel1.Size = new System.Drawing.Size(877, 62);
             this.panel1.TabIndex = 4;
             // 
             // label8
@@ -104,7 +104,7 @@ namespace Student_Management
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(302, 525);
+            this.label2.Location = new System.Drawing.Point(302, 518);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 23);
             this.label2.TabIndex = 5;
@@ -113,7 +113,7 @@ namespace Student_Management
             // txt_LN
             // 
             this.txt_LN.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_LN.Location = new System.Drawing.Point(429, 519);
+            this.txt_LN.Location = new System.Drawing.Point(429, 512);
             this.txt_LN.Name = "txt_LN";
             this.txt_LN.Size = new System.Drawing.Size(151, 32);
             this.txt_LN.TabIndex = 6;
@@ -121,9 +121,9 @@ namespace Student_Management
             // txt_MI
             // 
             this.txt_MI.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MI.Location = new System.Drawing.Point(634, 520);
+            this.txt_MI.Location = new System.Drawing.Point(634, 513);
             this.txt_MI.Name = "txt_MI";
-            this.txt_MI.Size = new System.Drawing.Size(59, 32);
+            this.txt_MI.Size = new System.Drawing.Size(78, 32);
             this.txt_MI.TabIndex = 8;
             // 
             // label3
@@ -131,7 +131,7 @@ namespace Student_Management
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(586, 526);
+            this.label3.Location = new System.Drawing.Point(586, 519);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 23);
             this.label3.TabIndex = 7;
@@ -142,7 +142,7 @@ namespace Student_Management
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(13, 577);
+            this.label4.Location = new System.Drawing.Point(13, 571);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 23);
             this.label4.TabIndex = 9;
@@ -151,9 +151,9 @@ namespace Student_Management
             // DT_Birth
             // 
             this.DT_Birth.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DT_Birth.Location = new System.Drawing.Point(163, 574);
+            this.DT_Birth.Location = new System.Drawing.Point(161, 568);
             this.DT_Birth.Name = "DT_Birth";
-            this.DT_Birth.Size = new System.Drawing.Size(315, 29);
+            this.DT_Birth.Size = new System.Drawing.Size(345, 29);
             this.DT_Birth.TabIndex = 10;
             // 
             // label5
@@ -161,7 +161,7 @@ namespace Student_Management
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(484, 578);
+            this.label5.Location = new System.Drawing.Point(509, 571);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 23);
             this.label5.TabIndex = 11;
@@ -174,7 +174,7 @@ namespace Student_Management
             this.CB_M.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CB_M.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_M.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.CB_M.Location = new System.Drawing.Point(541, 579);
+            this.CB_M.Location = new System.Drawing.Point(566, 572);
             this.CB_M.Name = "CB_M";
             this.CB_M.Size = new System.Drawing.Size(65, 22);
             this.CB_M.TabIndex = 12;
@@ -187,7 +187,7 @@ namespace Student_Management
             this.CB_F.AutoSize = true;
             this.CB_F.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_F.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.CB_F.Location = new System.Drawing.Point(609, 579);
+            this.CB_F.Location = new System.Drawing.Point(634, 572);
             this.CB_F.Name = "CB_F";
             this.CB_F.Size = new System.Drawing.Size(82, 22);
             this.CB_F.TabIndex = 13;
@@ -200,7 +200,7 @@ namespace Student_Management
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Navy;
-            this.label6.Location = new System.Drawing.Point(13, 620);
+            this.label6.Location = new System.Drawing.Point(13, 613);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 23);
             this.label6.TabIndex = 14;
@@ -209,16 +209,16 @@ namespace Student_Management
             // txt_Address
             // 
             this.txt_Address.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Address.Location = new System.Drawing.Point(115, 620);
+            this.txt_Address.Location = new System.Drawing.Point(115, 613);
             this.txt_Address.Multiline = true;
             this.txt_Address.Name = "txt_Address";
-            this.txt_Address.Size = new System.Drawing.Size(416, 74);
+            this.txt_Address.Size = new System.Drawing.Size(435, 74);
             this.txt_Address.TabIndex = 15;
             // 
             // txt_PhoneNumber
             // 
             this.txt_PhoneNumber.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PhoneNumber.Location = new System.Drawing.Point(541, 661);
+            this.txt_PhoneNumber.Location = new System.Drawing.Point(560, 655);
             this.txt_PhoneNumber.Name = "txt_PhoneNumber";
             this.txt_PhoneNumber.Size = new System.Drawing.Size(159, 32);
             this.txt_PhoneNumber.TabIndex = 17;
@@ -228,7 +228,7 @@ namespace Student_Management
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Navy;
-            this.label7.Location = new System.Drawing.Point(537, 624);
+            this.label7.Location = new System.Drawing.Point(556, 617);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(163, 23);
             this.label7.TabIndex = 16;
@@ -240,7 +240,7 @@ namespace Student_Management
             this.btn_Upload.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Upload.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Upload.ForeColor = System.Drawing.Color.White;
-            this.btn_Upload.Location = new System.Drawing.Point(718, 655);
+            this.btn_Upload.Location = new System.Drawing.Point(727, 652);
             this.btn_Upload.Name = "btn_Upload";
             this.btn_Upload.Size = new System.Drawing.Size(138, 34);
             this.btn_Upload.TabIndex = 19;
@@ -254,7 +254,7 @@ namespace Student_Management
             this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Clear.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Clear.ForeColor = System.Drawing.Color.White;
-            this.btn_Clear.Location = new System.Drawing.Point(574, 708);
+            this.btn_Clear.Location = new System.Drawing.Point(581, 704);
             this.btn_Clear.Name = "btn_Clear";
             this.btn_Clear.Size = new System.Drawing.Size(138, 34);
             this.btn_Clear.TabIndex = 20;
@@ -268,7 +268,7 @@ namespace Student_Management
             this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Add.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add.ForeColor = System.Drawing.Color.White;
-            this.btn_Add.Location = new System.Drawing.Point(718, 708);
+            this.btn_Add.Location = new System.Drawing.Point(727, 704);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(138, 34);
             this.btn_Add.TabIndex = 21;
@@ -276,55 +276,58 @@ namespace Student_Management
             this.btn_Add.UseVisualStyleBackColor = false;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
-            // Registration_GridView
-            // 
-            this.Registration_GridView.AllowUserToAddRows = false;
-            this.Registration_GridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Registration_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.Registration_GridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.Registration_GridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Registration_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.Registration_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Registration_GridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Registration_GridView.Location = new System.Drawing.Point(12, 68);
-            this.Registration_GridView.Name = "Registration_GridView";
-            this.Registration_GridView.RowHeadersWidth = 51;
-            this.Registration_GridView.RowTemplate.Height = 100;
-            this.Registration_GridView.Size = new System.Drawing.Size(843, 435);
-            this.Registration_GridView.TabIndex = 3;
-            this.Registration_GridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Registration_GridView_CellContentClick);
-            // 
             // PB_Student
             // 
             this.PB_Student.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.PB_Student.Location = new System.Drawing.Point(718, 509);
+            this.PB_Student.Location = new System.Drawing.Point(727, 506);
             this.PB_Student.Name = "PB_Student";
             this.PB_Student.Size = new System.Drawing.Size(138, 138);
             this.PB_Student.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_Student.TabIndex = 18;
             this.PB_Student.TabStop = false;
             // 
+            // Registration_GridView
+            // 
+            this.Registration_GridView.AllowUserToAddRows = false;
+            this.Registration_GridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Registration_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.Registration_GridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Registration_GridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            this.Registration_GridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Registration_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.Registration_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Registration_GridView.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Registration_GridView.Location = new System.Drawing.Point(12, 68);
+            this.Registration_GridView.Margin = new System.Windows.Forms.Padding(0);
+            this.Registration_GridView.Name = "Registration_GridView";
+            this.Registration_GridView.RowHeadersVisible = false;
+            this.Registration_GridView.RowHeadersWidth = 10;
+            this.Registration_GridView.RowTemplate.Height = 100;
+            this.Registration_GridView.Size = new System.Drawing.Size(855, 428);
+            this.Registration_GridView.TabIndex = 3;
+            this.Registration_GridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Registration_GridView_CellContentClick);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(867, 745);
+            this.ClientSize = new System.Drawing.Size(877, 745);
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.btn_Upload);
@@ -353,8 +356,8 @@ namespace Student_Management
             this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Registration_GridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Student)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Registration_GridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
