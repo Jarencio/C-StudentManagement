@@ -31,7 +31,6 @@ namespace Student_Management
         {
             System.Windows.Forms.Panel Pnl_Slide;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.Btn_Exit = new System.Windows.Forms.Button();
             this.pnl_GradesSubmenu = new System.Windows.Forms.Panel();
             this.Btn_GradesPrint = new System.Windows.Forms.Button();
             this.Btn_MngGrades = new System.Windows.Forms.Button();
@@ -51,24 +50,26 @@ namespace Student_Management
             this.Pnl_Logo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.Pnl_Main = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_cover = new System.Windows.Forms.Panel();
-            this.lbl_Welcome = new System.Windows.Forms.Label();
-            this.lbl_R = new System.Windows.Forms.Label();
-            this.lbl_name = new System.Windows.Forms.Label();
-            this.lbl_Role = new System.Windows.Forms.Label();
-            this.lbl_TS = new System.Windows.Forms.Label();
-            this.lbl_TSM = new System.Windows.Forms.Label();
-            this.lbl_TSF = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_SCF = new System.Windows.Forms.Label();
             this.lbl_SCM = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lbl_TSF = new System.Windows.Forms.Label();
+            this.lbl_TSM = new System.Windows.Forms.Label();
+            this.lbl_TS = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_Role = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.lbl_R = new System.Windows.Forms.Label();
+            this.lbl_Welcome = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Btn_Exit = new System.Windows.Forms.Button();
+            this.Btn_Dashboard = new System.Windows.Forms.Button();
             Pnl_Slide = new System.Windows.Forms.Panel();
             Pnl_Slide.SuspendLayout();
             this.pnl_GradesSubmenu.SuspendLayout();
@@ -76,18 +77,19 @@ namespace Student_Management
             this.pnl_StudentSubmenu.SuspendLayout();
             this.Pnl_Logo.SuspendLayout();
             this.Pnl_Main.SuspendLayout();
+            this.pnl_cover.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnl_cover.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Pnl_Slide
             // 
             Pnl_Slide.BackColor = System.Drawing.Color.RoyalBlue;
             Pnl_Slide.Controls.Add(this.Btn_Exit);
+            Pnl_Slide.Controls.Add(this.Btn_Dashboard);
             Pnl_Slide.Controls.Add(this.pnl_GradesSubmenu);
             Pnl_Slide.Controls.Add(this.Btn_Grades);
             Pnl_Slide.Controls.Add(this.pnl_CourseSubmenu);
@@ -99,26 +101,8 @@ namespace Student_Management
             Pnl_Slide.Location = new System.Drawing.Point(0, 0);
             Pnl_Slide.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             Pnl_Slide.Name = "Pnl_Slide";
-            Pnl_Slide.Size = new System.Drawing.Size(215, 661);
+            Pnl_Slide.Size = new System.Drawing.Size(215, 757);
             Pnl_Slide.TabIndex = 0;
-            // 
-            // Btn_Exit
-            // 
-            this.Btn_Exit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Btn_Exit.FlatAppearance.BorderSize = 0;
-            this.Btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Exit.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Exit.Location = new System.Drawing.Point(0, 884);
-            this.Btn_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Btn_Exit.Name = "Btn_Exit";
-            this.Btn_Exit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.Btn_Exit.Size = new System.Drawing.Size(215, 70);
-            this.Btn_Exit.TabIndex = 7;
-            this.Btn_Exit.Text = "Exit";
-            this.Btn_Exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Exit.UseVisualStyleBackColor = true;
-            this.Btn_Exit.Click += new System.EventHandler(this.Btn_Exit_Click);
             // 
             // pnl_GradesSubmenu
             // 
@@ -419,15 +403,47 @@ namespace Student_Management
             // Pnl_Main
             // 
             this.Pnl_Main.Controls.Add(this.pictureBox3);
-            this.Pnl_Main.Controls.Add(this.panel2);
             this.Pnl_Main.Controls.Add(this.panel1);
+            this.Pnl_Main.Controls.Add(this.panel2);
             this.Pnl_Main.Controls.Add(this.pnl_cover);
             this.Pnl_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pnl_Main.Location = new System.Drawing.Point(215, 0);
             this.Pnl_Main.Margin = new System.Windows.Forms.Padding(4);
             this.Pnl_Main.Name = "Pnl_Main";
-            this.Pnl_Main.Size = new System.Drawing.Size(880, 661);
+            this.Pnl_Main.Size = new System.Drawing.Size(880, 757);
             this.Pnl_Main.TabIndex = 1;
+            // 
+            // pnl_cover
+            // 
+            this.pnl_cover.Controls.Add(this.label1);
+            this.pnl_cover.Location = new System.Drawing.Point(0, 0);
+            this.pnl_cover.Name = "pnl_cover";
+            this.pnl_cover.Size = new System.Drawing.Size(712, 73);
+            this.pnl_cover.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label1.Location = new System.Drawing.Point(6, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(439, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Pambayang Dalahubsaan ng Marilao, PH ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Student_Management.Properties.Resources.Adobe_Express_20240227_1101200_829388321180157;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 210);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -439,131 +455,10 @@ namespace Student_Management
             this.panel2.Controls.Add(this.lbl_TSF);
             this.panel2.Controls.Add(this.lbl_TSM);
             this.panel2.Controls.Add(this.lbl_TS);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 538);
+            this.panel2.Location = new System.Drawing.Point(0, 634);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(880, 123);
-            this.panel2.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.lbl_Role);
-            this.panel1.Controls.Add(this.lbl_name);
-            this.panel1.Controls.Add(this.lbl_R);
-            this.panel1.Controls.Add(this.lbl_Welcome);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 78);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(880, 78);
-            this.panel1.TabIndex = 1;
-            // 
-            // pnl_cover
-            // 
-            this.pnl_cover.Controls.Add(this.label1);
-            this.pnl_cover.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_cover.Location = new System.Drawing.Point(0, 0);
-            this.pnl_cover.Name = "pnl_cover";
-            this.pnl_cover.Size = new System.Drawing.Size(880, 78);
-            this.pnl_cover.TabIndex = 0;
-            // 
-            // lbl_Welcome
-            // 
-            this.lbl_Welcome.AutoSize = true;
-            this.lbl_Welcome.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Welcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Welcome.Location = new System.Drawing.Point(28, 10);
-            this.lbl_Welcome.Name = "lbl_Welcome";
-            this.lbl_Welcome.Size = new System.Drawing.Size(107, 23);
-            this.lbl_Welcome.TabIndex = 0;
-            this.lbl_Welcome.Text = "Welcome:";
-            // 
-            // lbl_R
-            // 
-            this.lbl_R.AutoSize = true;
-            this.lbl_R.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_R.Location = new System.Drawing.Point(74, 42);
-            this.lbl_R.Name = "lbl_R";
-            this.lbl_R.Size = new System.Drawing.Size(61, 23);
-            this.lbl_R.TabIndex = 1;
-            this.lbl_R.Text = "Role:";
-            // 
-            // lbl_name
-            // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_name.Location = new System.Drawing.Point(141, 10);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(58, 23);
-            this.lbl_name.TabIndex = 2;
-            this.lbl_name.Text = "PDM";
-            // 
-            // lbl_Role
-            // 
-            this.lbl_Role.AutoSize = true;
-            this.lbl_Role.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Role.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Role.Location = new System.Drawing.Point(141, 42);
-            this.lbl_Role.Name = "lbl_Role";
-            this.lbl_Role.Size = new System.Drawing.Size(71, 23);
-            this.lbl_Role.TabIndex = 3;
-            this.lbl_Role.Text = "Admin";
-            // 
-            // lbl_TS
-            // 
-            this.lbl_TS.AutoSize = true;
-            this.lbl_TS.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TS.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_TS.Location = new System.Drawing.Point(21, 24);
-            this.lbl_TS.Name = "lbl_TS";
-            this.lbl_TS.Size = new System.Drawing.Size(153, 23);
-            this.lbl_TS.TabIndex = 3;
-            this.lbl_TS.Text = "Total Students:";
-            // 
-            // lbl_TSM
-            // 
-            this.lbl_TSM.AutoSize = true;
-            this.lbl_TSM.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TSM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_TSM.Location = new System.Drawing.Point(21, 71);
-            this.lbl_TSM.Name = "lbl_TSM";
-            this.lbl_TSM.Size = new System.Drawing.Size(62, 23);
-            this.lbl_TSM.TabIndex = 4;
-            this.lbl_TSM.Text = "Male:";
-            // 
-            // lbl_TSF
-            // 
-            this.lbl_TSF.AutoSize = true;
-            this.lbl_TSF.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TSF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_TSF.Location = new System.Drawing.Point(137, 71);
-            this.lbl_TSF.Name = "lbl_TSF";
-            this.lbl_TSF.Size = new System.Drawing.Size(84, 23);
-            this.lbl_TSF.TabIndex = 5;
-            this.lbl_TSF.Text = "Female:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(496, 24);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 23);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Select Class:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(619, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(222, 31);
-            this.comboBox1.TabIndex = 7;
+            this.panel2.TabIndex = 9;
             // 
             // lbl_SCF
             // 
@@ -587,16 +482,71 @@ namespace Student_Management
             this.lbl_SCM.TabIndex = 8;
             this.lbl_SCM.Text = "Male:";
             // 
-            // pictureBox3
+            // comboBox1
             // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::Student_Management.Properties.Resources._800px_Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 156);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(880, 382);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.comboBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(619, 21);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(222, 31);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(496, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(127, 23);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Select Class:";
+            // 
+            // lbl_TSF
+            // 
+            this.lbl_TSF.AutoSize = true;
+            this.lbl_TSF.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TSF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_TSF.Location = new System.Drawing.Point(137, 71);
+            this.lbl_TSF.Name = "lbl_TSF";
+            this.lbl_TSF.Size = new System.Drawing.Size(84, 23);
+            this.lbl_TSF.TabIndex = 5;
+            this.lbl_TSF.Text = "Female:";
+            // 
+            // lbl_TSM
+            // 
+            this.lbl_TSM.AutoSize = true;
+            this.lbl_TSM.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TSM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_TSM.Location = new System.Drawing.Point(21, 71);
+            this.lbl_TSM.Name = "lbl_TSM";
+            this.lbl_TSM.Size = new System.Drawing.Size(62, 23);
+            this.lbl_TSM.TabIndex = 4;
+            this.lbl_TSM.Text = "Male:";
+            // 
+            // lbl_TS
+            // 
+            this.lbl_TS.AutoSize = true;
+            this.lbl_TS.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TS.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_TS.Location = new System.Drawing.Point(21, 24);
+            this.lbl_TS.Name = "lbl_TS";
+            this.lbl_TS.Size = new System.Drawing.Size(153, 23);
+            this.lbl_TS.TabIndex = 3;
+            this.lbl_TS.Text = "Total Students:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.lbl_Role);
+            this.panel1.Controls.Add(this.lbl_name);
+            this.panel1.Controls.Add(this.lbl_R);
+            this.panel1.Controls.Add(this.lbl_Welcome);
+            this.panel1.Location = new System.Drawing.Point(0, 73);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(950, 78);
+            this.panel1.TabIndex = 8;
             // 
             // pictureBox2
             // 
@@ -608,39 +558,103 @@ namespace Student_Management
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // lbl_Role
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Student_Management.Properties.Resources.Adobe_Express_20240227_1101200_829388321180157;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 210);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.lbl_Role.AutoSize = true;
+            this.lbl_Role.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Role.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_Role.Location = new System.Drawing.Point(141, 42);
+            this.lbl_Role.Name = "lbl_Role";
+            this.lbl_Role.Size = new System.Drawing.Size(71, 23);
+            this.lbl_Role.TabIndex = 3;
+            this.lbl_Role.Text = "Admin";
             // 
-            // label1
+            // lbl_name
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(6, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Pambayang Dalahubsaan ng Marilao, PH ";
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_name.Location = new System.Drawing.Point(141, 10);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(58, 23);
+            this.lbl_name.TabIndex = 2;
+            this.lbl_name.Text = "PDM";
             // 
-            // Form1
+            // lbl_R
+            // 
+            this.lbl_R.AutoSize = true;
+            this.lbl_R.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_R.Location = new System.Drawing.Point(74, 42);
+            this.lbl_R.Name = "lbl_R";
+            this.lbl_R.Size = new System.Drawing.Size(61, 23);
+            this.lbl_R.TabIndex = 1;
+            this.lbl_R.Text = "Role:";
+            // 
+            // lbl_Welcome
+            // 
+            this.lbl_Welcome.AutoSize = true;
+            this.lbl_Welcome.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Welcome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_Welcome.Location = new System.Drawing.Point(28, 10);
+            this.lbl_Welcome.Name = "lbl_Welcome";
+            this.lbl_Welcome.Size = new System.Drawing.Size(107, 23);
+            this.lbl_Welcome.TabIndex = 0;
+            this.lbl_Welcome.Text = "Welcome:";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Student_Management.Properties.Resources._800px_Jf8374Municipal_Hall_Marilao_Bulacan_Exteriorfvf_24;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 149);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(880, 489);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // Btn_Exit
+            // 
+            this.Btn_Exit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn_Exit.FlatAppearance.BorderSize = 0;
+            this.Btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Exit.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_Exit.Location = new System.Drawing.Point(0, 954);
+            this.Btn_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_Exit.Name = "Btn_Exit";
+            this.Btn_Exit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Btn_Exit.Size = new System.Drawing.Size(215, 70);
+            this.Btn_Exit.TabIndex = 13;
+            this.Btn_Exit.Text = "Exit";
+            this.Btn_Exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Exit.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Dashboard
+            // 
+            this.Btn_Dashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn_Dashboard.FlatAppearance.BorderSize = 0;
+            this.Btn_Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Dashboard.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Dashboard.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_Dashboard.Location = new System.Drawing.Point(0, 884);
+            this.Btn_Dashboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_Dashboard.Name = "Btn_Dashboard";
+            this.Btn_Dashboard.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Btn_Dashboard.Size = new System.Drawing.Size(215, 70);
+            this.Btn_Dashboard.TabIndex = 12;
+            this.Btn_Dashboard.Text = "Dashboard";
+            this.Btn_Dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_Dashboard.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 661);
+            this.ClientSize = new System.Drawing.Size(1095, 757);
             this.Controls.Add(this.Pnl_Main);
             this.Controls.Add(Pnl_Slide);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             Pnl_Slide.ResumeLayout(false);
@@ -650,15 +664,15 @@ namespace Student_Management
             this.Pnl_Logo.ResumeLayout(false);
             this.Pnl_Logo.PerformLayout();
             this.Pnl_Main.ResumeLayout(false);
+            this.pnl_cover.ResumeLayout(false);
+            this.pnl_cover.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnl_cover.ResumeLayout(false);
-            this.pnl_cover.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -670,7 +684,6 @@ namespace Student_Management
         private System.Windows.Forms.Button Btn_MngStud;
         private System.Windows.Forms.Button Btn_Reg;
         private System.Windows.Forms.Button Btn_Student;
-        private System.Windows.Forms.Button Btn_Exit;
         private System.Windows.Forms.Panel pnl_GradesSubmenu;
         private System.Windows.Forms.Button Btn_GradesPrint;
         private System.Windows.Forms.Button Btn_MngGrades;
@@ -685,23 +698,25 @@ namespace Student_Management
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel Pnl_Main;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnl_cover;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbl_Role;
-        private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.Label lbl_R;
-        private System.Windows.Forms.Label lbl_Welcome;
+        private System.Windows.Forms.Label lbl_SCF;
+        private System.Windows.Forms.Label lbl_SCM;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lbl_TSF;
         private System.Windows.Forms.Label lbl_TSM;
         private System.Windows.Forms.Label lbl_TS;
-        private System.Windows.Forms.Label lbl_SCF;
-        private System.Windows.Forms.Label lbl_SCM;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbl_Role;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Label lbl_R;
+        private System.Windows.Forms.Label lbl_Welcome;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Btn_Exit;
+        private System.Windows.Forms.Button Btn_Dashboard;
     }
 }
 

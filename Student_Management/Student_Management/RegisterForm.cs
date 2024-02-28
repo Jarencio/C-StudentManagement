@@ -45,7 +45,7 @@ namespace Student_Management
             int nowyear = DateTime.Now.Year;
             if ((nowyear - birthyear) < 10 || (nowyear - birthyear) > 100)
             {
-                MessageBox.Show("Registraion Failed", "You Must be in the age of 10 to 100 years old to register", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You Must be in the age of 10 to 100 years old to register", "Registraion Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (verify())
             {
@@ -55,7 +55,10 @@ namespace Student_Management
                     PB_Student.Image.Save(ms, PB_Student.Image.RawFormat);
                     byte[] img = ms.ToArray();
                     if (student.insertSTD(FName, LName, MiddleI, BDD, Sx, Num, Addr, img))
-                        MessageBox.Show("Registraion Success", "New Student is added to the record!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    {
+                        showTable();
+                        MessageBox.Show("New Student is added to the record!", "Registraion Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
 
                 catch (Exception ex)
@@ -65,7 +68,7 @@ namespace Student_Management
             }
             else
             {
-                MessageBox.Show("Registraion Failed", "Fill Up all the Important Informations", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show( "Fill Up all the Important Informations", "Registraion Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -86,17 +89,22 @@ namespace Student_Management
         }
         private void btn_Clear_Click(object sender, EventArgs e)
         {
-
+            txt_Address.Clear();
+            txt_FN.Clear();
+            txt_LN.Clear();
+            txt_MI.Clear();
+            txt_PhoneNumber.Clear();
+            PB_Student.Image = null;
         }
 
         private void CB_M_CheckedChanged(object sender, EventArgs e)
         {
-   
+
         }
 
         private void CB_F_CheckedChanged(object sender, EventArgs e)
         {
-   
+
         }
 
         private void CheckBox_CheckedChanged(object sender, EventArgs e)
@@ -113,6 +121,24 @@ namespace Student_Management
                     CB_M.Checked = false;
                 }
             }
+        }
+
+        private void Registration_GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        public void showTable()
+        {
+            Registration_GridView.DataSource = student.getstudentlist();
+            DataGridViewImageColumn imgcol = new DataGridViewImageColumn();
+            imgcol = (DataGridViewImageColumn)Registration_GridView.Columns[8];
+            imgcol.ImageLayout = DataGridViewImageCellLayout.Stretch;
+        }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+            showTable();
         }
     }
 }

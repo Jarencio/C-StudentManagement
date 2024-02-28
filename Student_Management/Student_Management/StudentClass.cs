@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace Student_Management
 {
@@ -33,9 +34,22 @@ namespace Student_Management
             else
             {
                 connect.closeconnect();
-                return false; 
+                return false;
             }
         }
+
+        public DataTable getstudentlist()
+        {
+            MySqlCommand com = new MySqlCommand("SELECT * FROM `student`", connect.getconnection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+
+        }
+
+
+
 
 
     }

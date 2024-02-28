@@ -18,7 +18,7 @@ namespace Student_Management
             CusDes();
         }
 
-     
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -48,14 +48,15 @@ namespace Student_Management
             {
                 Hidesubmenu();
                 SubMenu.Visible = true;
-            } else
+            }
+            else
             {
                 SubMenu.Visible = false;
             }
 
         }
 
-        
+
         private void Btn_Student_Click(object sender, EventArgs e)
         {
             showSubMenu(pnl_StudentSubmenu);
@@ -64,7 +65,7 @@ namespace Student_Management
         #region pnl_StudentSubmenu
         private void button1_Click(object sender, EventArgs e)
         {
-            //...
+            OpenChildForm(new RegisterForm());
             Hidesubmenu();
         }
         private void button2_Click(object sender, EventArgs e)
@@ -149,6 +150,22 @@ namespace Student_Management
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private Form activeform = null;
+
+        private void OpenChildForm(Form ChildForm)
+        {
+            if (activeform != null)
+                activeform.Close();
+            activeform = ChildForm;
+            ChildForm.TopLevel = false;
+            ChildForm.FormBorderStyle = FormBorderStyle.None;
+            ChildForm.Dock = DockStyle.Fill;
+            Pnl_Main.Controls.Add(ChildForm);
+            Pnl_Main.Tag = ChildForm;
+            ChildForm.BringToFront();
+            ChildForm.Show();
         }
     }
 }
