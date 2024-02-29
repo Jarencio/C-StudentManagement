@@ -29,9 +29,10 @@ namespace Student_Management
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.Student_GridView = new System.Windows.Forms.DataGridView();
@@ -39,15 +40,17 @@ namespace Student_Management
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Print = new System.Windows.Forms.Button();
             this.RB_A = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.RB_Fem = new System.Windows.Forms.RadioButton();
             this.RB_F = new System.Windows.Forms.RadioButton();
             this.RB_M = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Btn_Search = new System.Windows.Forms.Button();
+            this.dBConnectBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Student_GridView)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dBConnectBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,49 +71,53 @@ namespace Student_Management
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Schoolbook", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(238, 8);
+            this.label8.Location = new System.Drawing.Point(282, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(441, 46);
+            this.label8.Size = new System.Drawing.Size(349, 46);
             this.label8.TabIndex = 0;
-            this.label8.Text = "MANAGE STUDENT";
+            this.label8.Text = "STUDENT LIST";
             // 
             // Student_GridView
             // 
             this.Student_GridView.AllowUserToAddRows = false;
             this.Student_GridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.Student_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.Student_GridView.AllowUserToResizeColumns = false;
+            this.Student_GridView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Student_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Student_GridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Student_GridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Student_GridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.Student_GridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Student_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Student_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Student_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Student_GridView.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Student_GridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.Student_GridView.Location = new System.Drawing.Point(12, 102);
             this.Student_GridView.Margin = new System.Windows.Forms.Padding(0);
             this.Student_GridView.Name = "Student_GridView";
             this.Student_GridView.RowHeadersVisible = false;
             this.Student_GridView.RowHeadersWidth = 10;
             this.Student_GridView.RowTemplate.Height = 100;
+            this.Student_GridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Student_GridView.Size = new System.Drawing.Size(857, 557);
             this.Student_GridView.TabIndex = 30;
+            this.Student_GridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Student_GridView_CellContentClick_1);
             // 
             // CB_Course
             // 
@@ -130,7 +137,7 @@ namespace Student_Management
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.btn_Print);
             this.panel2.Controls.Add(this.RB_A);
-            this.panel2.Controls.Add(this.radioButton1);
+            this.panel2.Controls.Add(this.RB_Fem);
             this.panel2.Controls.Add(this.RB_F);
             this.panel2.Controls.Add(this.RB_M);
             this.panel2.Controls.Add(this.label5);
@@ -152,6 +159,7 @@ namespace Student_Management
             this.btn_Print.TabIndex = 34;
             this.btn_Print.Text = "Print";
             this.btn_Print.UseVisualStyleBackColor = false;
+            this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
             // 
             // RB_A
             // 
@@ -167,19 +175,21 @@ namespace Student_Management
             this.RB_A.TabStop = true;
             this.RB_A.Text = "All";
             this.RB_A.UseVisualStyleBackColor = true;
+            this.RB_A.CheckedChanged += new System.EventHandler(this.RB_A_CheckedChanged);
             // 
-            // radioButton1
+            // RB_Fem
             // 
-            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.RB_Fem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century", 12F);
-            this.radioButton1.Location = new System.Drawing.Point(299, 45);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(99, 27);
-            this.radioButton1.TabIndex = 13;
-            this.radioButton1.Text = "Female";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RB_Fem.AutoSize = true;
+            this.RB_Fem.Font = new System.Drawing.Font("Century", 12F);
+            this.RB_Fem.Location = new System.Drawing.Point(299, 45);
+            this.RB_Fem.Name = "RB_Fem";
+            this.RB_Fem.Size = new System.Drawing.Size(99, 27);
+            this.RB_Fem.TabIndex = 13;
+            this.RB_Fem.Text = "Female";
+            this.RB_Fem.UseVisualStyleBackColor = true;
+            this.RB_Fem.CheckedChanged += new System.EventHandler(this.RB_Fem_CheckedChanged);
             // 
             // RB_F
             // 
@@ -206,6 +216,7 @@ namespace Student_Management
             this.RB_M.TabIndex = 12;
             this.RB_M.Text = "Male";
             this.RB_M.UseVisualStyleBackColor = true;
+            this.RB_M.CheckedChanged += new System.EventHandler(this.RB_M_CheckedChanged);
             // 
             // label5
             // 
@@ -239,7 +250,7 @@ namespace Student_Management
             // 
             this.Btn_Search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Search.BackColor = System.Drawing.Color.MediumBlue;
+            this.Btn_Search.BackColor = System.Drawing.Color.Orange;
             this.Btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_Search.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Search.ForeColor = System.Drawing.Color.White;
@@ -250,6 +261,10 @@ namespace Student_Management
             this.Btn_Search.Text = "Search";
             this.Btn_Search.UseVisualStyleBackColor = false;
             this.Btn_Search.Click += new System.EventHandler(this.Btn_Search_Click);
+            // 
+            // dBConnectBindingSource
+            // 
+            this.dBConnectBindingSource.DataSource = typeof(Student_Management.DBConnect);
             // 
             // PrintStdForm
             // 
@@ -271,6 +286,7 @@ namespace Student_Management
             ((System.ComponentModel.ISupportInitialize)(this.Student_GridView)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dBConnectBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,7 +305,8 @@ namespace Student_Management
         private System.Windows.Forms.RadioButton RB_F;
         private System.Windows.Forms.Button btn_Print;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton RB_Fem;
         private System.Windows.Forms.Button Btn_Search;
+        private System.Windows.Forms.BindingSource dBConnectBindingSource;
     }
 }

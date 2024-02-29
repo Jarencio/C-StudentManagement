@@ -43,3 +43,6 @@ C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.csproj.CopyComplete
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.MSForm.resources
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.PrintStdForm.resources
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.Course.resources
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.ManageCourse.resources
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.CoursePrintForm.resources

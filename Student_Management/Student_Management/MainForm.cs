@@ -100,19 +100,19 @@ namespace Student_Management
         # region pnl_CourseSubmenu
         private void Btn_NewCourse_Click(object sender, EventArgs e)
         {
-            //...
+            OpenChildForm(new Course());
             Hidesubmenu();
         }
 
         private void Btn_MngCourse_Click(object sender, EventArgs e)
         {
-            //...
+            OpenChildForm(new ManageCourse());
             Hidesubmenu();
         }
 
         private void Btn_CoursePrint_Click(object sender, EventArgs e)
         {
-            //...
+            OpenChildForm(new CoursePrintForm());
             Hidesubmenu();
         }
         #endregion pnl_CourseSubmenu
@@ -161,7 +161,7 @@ namespace Student_Management
 
         private Form activeform = null;
 
-        private void OpenChildForm(Form ChildForm)
+        public void OpenChildForm(Form ChildForm)
         {
             if (activeform != null)
                 activeform.Close();
@@ -174,6 +174,8 @@ namespace Student_Management
             ChildForm.BringToFront();
             ChildForm.Show();
         }
+
+   
 
         private void Btn_Exit_Click_1(object sender, EventArgs e)
         {

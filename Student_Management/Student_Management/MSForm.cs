@@ -175,6 +175,14 @@ namespace Student_Management
             CB_F.Checked = false;
         }
 
+        private void btn_Del_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void Student_GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

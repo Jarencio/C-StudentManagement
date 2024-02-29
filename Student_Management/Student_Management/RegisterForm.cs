@@ -150,5 +150,10 @@ namespace Student_Management
             CB_M.Checked = true;
             CB_F.Checked = false;
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
