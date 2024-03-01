@@ -39,6 +39,17 @@ namespace Student_Management
             }
         }
 
+        public DataTable Names(MySqlCommand com, int id)
+        {
+            com.Parameters.AddWithValue("@id", id); // Set the value of the parameter
+            com.Connection = connect.getconnection;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
+
         public DataTable getstudentlist()
         {
             MySqlCommand com = new MySqlCommand("SELECT * FROM `student`", connect.getconnection);

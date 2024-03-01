@@ -68,7 +68,7 @@ namespace Student_Management
 
         private void CoursePrintForm_Load(object sender, EventArgs e)
         {
-            ShowData(new MySqlCommand("SELECT * FROM `course`"));
+            ShowData(new MySqlCommand("SELECT * FROM `course` "));
         }
     }
 }

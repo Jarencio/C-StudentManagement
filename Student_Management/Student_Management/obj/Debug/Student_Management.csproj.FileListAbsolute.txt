@@ -46,3 +46,4 @@ C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.Course.resources
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.ManageCourse.resources
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.CoursePrintForm.resources
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.GradeForm.resources

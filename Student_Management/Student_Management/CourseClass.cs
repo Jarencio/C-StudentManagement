@@ -33,6 +33,11 @@ namespace Student_Management
                 return false;
             }
         }
+
+
+
+
+
         public DataTable Getlist(MySqlCommand com)
         {
             com.Connection = connect.getconnection;

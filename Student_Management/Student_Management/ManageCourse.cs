@@ -22,7 +22,7 @@ namespace Student_Management
         public void ShowData(MySqlCommand com)
         {
             Course_GridView.ReadOnly = true;
-            DataGridViewImageColumn imgcolumn = new DataGridViewImageColumn();
+           // DataGridViewImageColumn imgcolumn = new DataGridViewImageColumn();
             //Student_GridView.Height = 100;
             Course_GridView.DataSource = CC.Getlist(com);
         }
@@ -112,6 +112,11 @@ namespace Student_Management
         private void btn_Search_Click(object sender, EventArgs e)
         {
             Course_GridView.DataSource = CC.SearchCourse(txt_searchbox.Text);
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
