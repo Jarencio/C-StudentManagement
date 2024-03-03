@@ -40,6 +40,62 @@ namespace Student_Management
             }
         }
 
+        public DataTable gradelist()
+        {
+            MySqlCommand com = new MySqlCommand("SELECT `Grades_ID`,`Student_ID`, `FirstName`, `LastName`, `Course`, `GWA`, `SubjCount`, CONCAT(`Year`, `Sem`, ' - ', `Section`) AS `Section` FROM `grades`", connect.getconnection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
+        public bool updtClass(int Gim,int StudID, string FN, string LN, string course, float G, int SC, int Y, int S, string Sec)
+        {
+            MySqlCommand command = new MySqlCommand("UPDATE `grades` SET `Student_ID`= @SI,`FirstName`= @FN,`LastName`= @LN,`Course`= @C,`GWA`= @G,`SubjCount`=@SC,`Year`=@Y,`Sem`=@S,`Section`=@SEC WHERE  `Grades_ID`= @GI", connect.getconnection);
+            //,@SI,@FN,@LN,@C,@G,@SC,@Y,@S,@SEC
+            command.Parameters.Add("@GI", MySqlDbType.Int32).Value = Gim;
+            command.Parameters.Add("@SI", MySqlDbType.Int32).Value = StudID;
+            command.Parameters.Add("@FN", MySqlDbType.VarChar).Value = FN;
+            command.Parameters.Add("@LN", MySqlDbType.VarChar).Value = LN;
+            command.Parameters.Add("@C", MySqlDbType.VarChar).Value = course;
+            command.Parameters.Add("@G", MySqlDbType.Float).Value = G;
+            command.Parameters.Add("@SC", MySqlDbType.Int32).Value = SC;
+            command.Parameters.Add("@Y", MySqlDbType.Int32).Value = Y;
+            command.Parameters.Add("@S", MySqlDbType.Int32).Value = S;
+            command.Parameters.Add("@SEC", MySqlDbType.VarChar).Value = Sec;
+
+            connect.openconnect();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.closeconnect();
+                return true;
+            }
+            else
+            {
+                connect.closeconnect();
+                return false;
+            }
+        }
+
+        public bool deltclass(int Gim)
+        {
+            MySqlCommand command = new MySqlCommand("DELETE FROM `grades` WHERE `Grades_ID` = @GI", connect.getconnection);
+            //,@SI,@FN,@LN,@C,@G,@SC,@Y,@S,@SEC
+            command.Parameters.Add("@GI", MySqlDbType.Int32).Value = Gim;
+
+            connect.openconnect();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.closeconnect();
+                return true;
+            }
+            else
+            {
+                connect.closeconnect();
+                return false;
+            }
+        }
+
         public DataTable Getlist(MySqlCommand com)
         {
             com.Connection = connect.getconnection;
@@ -49,5 +105,15 @@ namespace Student_Management
             return table;
             return table;
         }
+
+        public DataTable SearchGrade(String searchdata)
+        {
+            MySqlCommand com = new MySqlCommand("SELECT  `Grades_ID`,`Student_ID`, `FirstName`, `LastName`, `Course`, `GWA`, `SubjCount`, CONCAT(`Year`, `Sem`, ' - ', `Section`) AS `Section`  FROM `grades` WHERE CONCAT(`FirstName`, `LastName`,`GWA`, `Course`) LIKE '%" + searchdata + "%' ", connect.getconnection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
     }
 }

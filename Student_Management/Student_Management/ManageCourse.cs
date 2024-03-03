@@ -119,5 +119,14 @@ namespace Student_Management
         {
 
         }
+
+        private void btn_Del_Click(object sender, EventArgs e)
+        {
+            int s;
+            if (int.TryParse(txt_ID.Text,out s))
+            {   }
+            CC.deltcourse(s);
+            showTable();
+        }
     }
 }

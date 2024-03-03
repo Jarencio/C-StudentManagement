@@ -126,6 +126,7 @@ namespace Student_Management
             this.btn_Del.TabIndex = 42;
             this.btn_Del.Text = "Delete";
             this.btn_Del.UseVisualStyleBackColor = false;
+            this.btn_Del.Click += new System.EventHandler(this.btn_Del_Click);
             // 
             // btn_Clear
             // 

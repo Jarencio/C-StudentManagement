@@ -89,6 +89,25 @@ namespace Student_Management
             return table;
         }
 
+        public bool deltcourse(int ID)
+        {
+            MySqlCommand command = new MySqlCommand("DELETE FROM `course` WHERE `Course_ID` = @ID", connect.getconnection);
+            //,@SI,@FN,@LN,@C,@G,@SC,@Y,@S,@SEC
+            command.Parameters.Add("@ID", MySqlDbType.Int32).Value = ID;
+
+            connect.openconnect();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.closeconnect();
+                return true;
+            }
+            else
+            {
+                connect.closeconnect();
+                return false;
+            }
+        }
+
 
 
     }

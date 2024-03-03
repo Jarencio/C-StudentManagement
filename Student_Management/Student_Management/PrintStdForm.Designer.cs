@@ -62,6 +62,7 @@ namespace Student_Management
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(877, 62);
             this.panel1.TabIndex = 31;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label8
             // 

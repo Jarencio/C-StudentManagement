@@ -168,5 +168,10 @@ namespace Student_Management
             selectquery = "SELECT * FROM `student` WHERE Sex = 'female'";
             ShowData(new MySqlCommand(selectquery));
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

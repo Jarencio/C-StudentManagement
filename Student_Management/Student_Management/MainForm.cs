@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +18,15 @@ namespace Student_Management
             InitializeComponent();
             CusDes();
         }
+        CourseClass CC = new CourseClass();
 
         StudentClass cl = new StudentClass();
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            CB_Cources.DataSource = CC.Getlist(new MySqlCommand("SELECT * FROM `course`"));
+            CB_Cources.ValueMember = "course";
+            CB_Cources.DisplayMember = "course";
             StdCount();
         }
 
@@ -133,13 +138,13 @@ namespace Student_Management
 
         private void Btn_MngGrades_Click(object sender, EventArgs e)
         {
-            //...
+            OpenChildForm(new UpdtGradesForm());
             Hidesubmenu();
         }
 
         private void Btn_GradesPrint_Click(object sender, EventArgs e)
         {
-            //...
+            OpenChildForm(new GradesList());
             Hidesubmenu();
         }
         #endregion pnl_GradesSubmenu
@@ -179,6 +184,7 @@ namespace Student_Management
 
         private void Btn_Exit_Click_1(object sender, EventArgs e)
         {
+            Application.Exit();
 
         }
 

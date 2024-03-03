@@ -60,9 +60,7 @@ namespace Student_Management
             this.lbl_R = new System.Windows.Forms.Label();
             this.lbl_Welcome = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbl_SCF = new System.Windows.Forms.Label();
-            this.lbl_SCM = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CB_Cources = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.lbl_TSF = new System.Windows.Forms.Label();
             this.lbl_TSM = new System.Windows.Forms.Label();
@@ -522,9 +520,7 @@ namespace Student_Management
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.Controls.Add(this.lbl_SCF);
-            this.panel2.Controls.Add(this.lbl_SCM);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.CB_Cources);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.lbl_TSF);
             this.panel2.Controls.Add(this.lbl_TSM);
@@ -534,47 +530,26 @@ namespace Student_Management
             this.panel2.Size = new System.Drawing.Size(911, 123);
             this.panel2.TabIndex = 9;
             // 
-            // lbl_SCF
+            // CB_Cources
             // 
-            this.lbl_SCF.AutoSize = true;
-            this.lbl_SCF.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SCF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_SCF.Location = new System.Drawing.Point(615, 71);
-            this.lbl_SCF.Name = "lbl_SCF";
-            this.lbl_SCF.Size = new System.Drawing.Size(84, 23);
-            this.lbl_SCF.TabIndex = 9;
-            this.lbl_SCF.Text = "Female:";
-            // 
-            // lbl_SCM
-            // 
-            this.lbl_SCM.AutoSize = true;
-            this.lbl_SCM.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SCM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_SCM.Location = new System.Drawing.Point(499, 71);
-            this.lbl_SCM.Name = "lbl_SCM";
-            this.lbl_SCM.Size = new System.Drawing.Size(62, 23);
-            this.lbl_SCM.TabIndex = 8;
-            this.lbl_SCM.Text = "Male:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(619, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(222, 31);
-            this.comboBox1.TabIndex = 7;
+            this.CB_Cources.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Cources.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CB_Cources.FormattingEnabled = true;
+            this.CB_Cources.Location = new System.Drawing.Point(421, 65);
+            this.CB_Cources.Name = "CB_Cources";
+            this.CB_Cources.Size = new System.Drawing.Size(475, 31);
+            this.CB_Cources.TabIndex = 7;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(496, 24);
+            this.label9.Location = new System.Drawing.Point(417, 24);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 23);
+            this.label9.Size = new System.Drawing.Size(181, 23);
             this.label9.TabIndex = 6;
-            this.label9.Text = "Select Class:";
+            this.label9.Text = "Available Cources:";
             // 
             // lbl_TSF
             // 
@@ -630,8 +605,8 @@ namespace Student_Management
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1126, 757);
             this.Controls.Add(this.Pnl_Main);
             this.Controls.Add(Pnl_Slide);
@@ -684,10 +659,6 @@ namespace Student_Management
         private System.Windows.Forms.Panel pnl_cover;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbl_SCF;
-        private System.Windows.Forms.Label lbl_SCM;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lbl_TSF;
         private System.Windows.Forms.Label lbl_TSM;
         private System.Windows.Forms.Label lbl_TS;
@@ -700,6 +671,8 @@ namespace Student_Management
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button Btn_Exit;
         private System.Windows.Forms.Button Btn_Dashboard;
+        private System.Windows.Forms.ComboBox CB_Cources;
+        private System.Windows.Forms.Label label9;
     }
 }
 

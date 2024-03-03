@@ -57,8 +57,8 @@ namespace Student_Management
             DataTable table = new DataTable();
             adapter.Fill(table);
             return table;
-
         }
+        //            ShowData(new MySqlCommand());
 
         //To get the Counts
         public string execount(string Query)
@@ -133,6 +133,25 @@ namespace Student_Management
             return table;
             return table;
         }
-    
+
+        public bool deltstud(int ID)
+        {
+            MySqlCommand command = new MySqlCommand("DELETE FROM `student` WHERE `StudentID` = @ID", connect.getconnection);
+            //,@SI,@FN,@LN,@C,@G,@SC,@Y,@S,@SEC
+            command.Parameters.Add("@ID", MySqlDbType.Int32).Value = ID;
+
+            connect.openconnect();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.closeconnect();
+                return true;
+            }
+            else
+            {
+                connect.closeconnect();
+                return false;
+            }
+        }
+
     }
 }

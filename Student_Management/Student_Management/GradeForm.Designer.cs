@@ -33,8 +33,12 @@ namespace Student_Management
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.CB_Sem = new System.Windows.Forms.ComboBox();
+            this.CB_Year = new System.Windows.Forms.ComboBox();
+            this.CB_connector = new System.Windows.Forms.ComboBox();
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Clear = new System.Windows.Forms.Button();
+            this.Txt_Sec = new System.Windows.Forms.TextBox();
             this.CB_SelCor = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,10 +53,6 @@ namespace Student_Management
             this.panel1 = new System.Windows.Forms.Panel();
             this.Lbl_Grades = new System.Windows.Forms.Label();
             this.Grades_GridView = new System.Windows.Forms.DataGridView();
-            this.CB_connector = new System.Windows.Forms.ComboBox();
-            this.CB_Year = new System.Windows.Forms.ComboBox();
-            this.CB_Sem = new System.Windows.Forms.ComboBox();
-            this.Txt_Sec = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grades_GridView)).BeginInit();
@@ -84,6 +84,42 @@ namespace Student_Management
             this.panel2.Size = new System.Drawing.Size(857, 125);
             this.panel2.TabIndex = 25;
             // 
+            // CB_Sem
+            // 
+            this.CB_Sem.Font = new System.Drawing.Font("Century", 12F);
+            this.CB_Sem.FormattingEnabled = true;
+            this.CB_Sem.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.CB_Sem.Location = new System.Drawing.Point(255, 22);
+            this.CB_Sem.Name = "CB_Sem";
+            this.CB_Sem.Size = new System.Drawing.Size(69, 31);
+            this.CB_Sem.TabIndex = 38;
+            // 
+            // CB_Year
+            // 
+            this.CB_Year.Font = new System.Drawing.Font("Century", 12F);
+            this.CB_Year.FormattingEnabled = true;
+            this.CB_Year.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.CB_Year.Location = new System.Drawing.Point(75, 21);
+            this.CB_Year.Name = "CB_Year";
+            this.CB_Year.Size = new System.Drawing.Size(69, 31);
+            this.CB_Year.TabIndex = 37;
+            // 
+            // CB_connector
+            // 
+            this.CB_connector.Font = new System.Drawing.Font("Century", 12F);
+            this.CB_connector.FormattingEnabled = true;
+            this.CB_connector.Location = new System.Drawing.Point(769, 22);
+            this.CB_connector.Name = "CB_connector";
+            this.CB_connector.Size = new System.Drawing.Size(10, 31);
+            this.CB_connector.TabIndex = 35;
+            this.CB_connector.Visible = false;
+            // 
             // btn_Add
             // 
             this.btn_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -114,8 +150,17 @@ namespace Student_Management
             this.btn_Clear.UseVisualStyleBackColor = false;
             this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
+            // Txt_Sec
+            // 
+            this.Txt_Sec.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Sec.Location = new System.Drawing.Point(424, 21);
+            this.Txt_Sec.Name = "Txt_Sec";
+            this.Txt_Sec.Size = new System.Drawing.Size(66, 32);
+            this.Txt_Sec.TabIndex = 32;
+            // 
             // CB_SelCor
             // 
+            this.CB_SelCor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CB_SelCor.Font = new System.Drawing.Font("Century", 12F);
             this.CB_SelCor.FormattingEnabled = true;
             this.CB_SelCor.Location = new System.Drawing.Point(649, 21);
@@ -268,17 +313,17 @@ namespace Student_Management
             this.Grades_GridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.Grades_GridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuText;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Grades_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Grades_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
@@ -289,53 +334,9 @@ namespace Student_Management
             this.Grades_GridView.Name = "Grades_GridView";
             this.Grades_GridView.RowHeadersVisible = false;
             this.Grades_GridView.RowHeadersWidth = 10;
-            this.Grades_GridView.RowTemplate.Height = 100;
+            this.Grades_GridView.RowTemplate.Height = 50;
             this.Grades_GridView.Size = new System.Drawing.Size(855, 554);
             this.Grades_GridView.TabIndex = 23;
-            // 
-            // CB_connector
-            // 
-            this.CB_connector.Font = new System.Drawing.Font("Century", 12F);
-            this.CB_connector.FormattingEnabled = true;
-            this.CB_connector.Location = new System.Drawing.Point(769, 22);
-            this.CB_connector.Name = "CB_connector";
-            this.CB_connector.Size = new System.Drawing.Size(10, 31);
-            this.CB_connector.TabIndex = 35;
-            this.CB_connector.Visible = false;
-            // 
-            // CB_Year
-            // 
-            this.CB_Year.Font = new System.Drawing.Font("Century", 12F);
-            this.CB_Year.FormattingEnabled = true;
-            this.CB_Year.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
-            this.CB_Year.Location = new System.Drawing.Point(75, 21);
-            this.CB_Year.Name = "CB_Year";
-            this.CB_Year.Size = new System.Drawing.Size(69, 31);
-            this.CB_Year.TabIndex = 37;
-            // 
-            // CB_Sem
-            // 
-            this.CB_Sem.Font = new System.Drawing.Font("Century", 12F);
-            this.CB_Sem.FormattingEnabled = true;
-            this.CB_Sem.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.CB_Sem.Location = new System.Drawing.Point(255, 22);
-            this.CB_Sem.Name = "CB_Sem";
-            this.CB_Sem.Size = new System.Drawing.Size(69, 31);
-            this.CB_Sem.TabIndex = 38;
-            // 
-            // Txt_Sec
-            // 
-            this.Txt_Sec.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Sec.Location = new System.Drawing.Point(424, 21);
-            this.Txt_Sec.Name = "Txt_Sec";
-            this.Txt_Sec.Size = new System.Drawing.Size(66, 32);
-            this.Txt_Sec.TabIndex = 32;
             // 
             // GradeForm
             // 
