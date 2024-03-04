@@ -52,3 +52,4 @@ C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\bin\Debug\Student_Management.application
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.exe.manifest
 C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.application
+C:\Program Files (x86)\C-StudentManagement\Student_Management\Student_Management\obj\Debug\Student_Management.csproj.AssemblyReference.cache
